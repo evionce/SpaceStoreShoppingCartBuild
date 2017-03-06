@@ -1,6 +1,5 @@
 package com.techelevator.ssg.model.forum;
 
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.hasItem;
 import static org.junit.Assert.assertThat;
 
@@ -16,8 +15,6 @@ import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.techelevator.ssg.DAOIntegrationTest;
-import com.techelevator.ssg.model.forum.ForumPost;
-import com.techelevator.ssg.model.forum.JdbcForumDao;
 
 public class JdbcForumDaoIntegrationTest extends DAOIntegrationTest {
 

@@ -1,6 +1,5 @@
 package com.techelevator.ssg.model.forum;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class ForumPost {
