@@ -1,6 +1,7 @@
 package com.techelevator.ssg.model.calculator;
 
 public class AlienTravelCalculator {
+	
 	public static double alienCalc(String planet, String transportation) {
 		transportations T = transportations.valueOf(transportation.replace(" ", "_").toUpperCase());
 		double driveTime = planets.valueOf(planet.toUpperCase()).getDriveTime(T);

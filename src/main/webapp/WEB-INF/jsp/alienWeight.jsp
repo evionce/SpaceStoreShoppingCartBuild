@@ -7,7 +7,8 @@
 	<c:url var="formAction" value="/alienWeightResult" />
 	<form method="GET" action="${formAction}">
 		<div>
-			<label for="Planet">Choose A Planet:</label> <select name="Planet">
+			<label for="Planet">Choose A Planet:</label>
+			<select name="Planet">
 				<option value="Mercury">Mercury</option>
 				<option value="Venus">Venus</option>
 				<option value="Mars">Mars</option>
@@ -19,7 +20,7 @@
 		</div>
 		<div>
 			<label for="earthWeight">Enter Your Earth Weight:</label> 
-			<input type="text" name="earthWeight"/>
+			<input type="text" name="earthWeight" />
 		</div>
 		<input type="submit"
 			value="Calculate Weight" />
@@ -29,4 +30,3 @@
 </section>
 
 <c:import url="/WEB-INF/jsp/common/footer.jsp" />
-

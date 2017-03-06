@@ -18,9 +18,9 @@ public class PageController {
 		return "alienWeight";
 		
 	}
+	
 	@RequestMapping("/alienWeightResult")
 	public String showAlienWeightCalculatorResults(HttpServletRequest request) {
-		
 		String planetName = request.getParameter("Planet");
 		double earthWeight = Double.parseDouble(request.getParameter("earthWeight"));
 		
@@ -29,13 +29,14 @@ public class PageController {
 		
 		return "alienWeightResult";
 	}
+	
 	@RequestMapping("/alienAge")
 	public String showAlienAge() {
 		return "alienAge";
 	}
+	
 	@RequestMapping("/alienAgeResult")
 	public String showAlienAgeCalculatorResults(HttpServletRequest request) {
-		
 		String planetName = request.getParameter("Planet");
 		int earthAge = Integer.parseInt(request.getParameter("earthAge"));
 		
@@ -45,13 +46,14 @@ public class PageController {
 		
 		return "alienAgeResult";
 	}
+	
 	@RequestMapping("/alienDriveTime")
 	public String showDriveTime() {
 		return "alienDriveTime";
 	}
+	
 	@RequestMapping("/alienDriveTimeResult")
 	public String showAlienDriveCalculatorResults(HttpServletRequest request) {
-		
 		String planetName = request.getParameter("Planet");
 		String transportation = request.getParameter("Transportation");
 
