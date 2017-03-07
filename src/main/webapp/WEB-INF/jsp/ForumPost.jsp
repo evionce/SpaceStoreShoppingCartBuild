@@ -2,27 +2,25 @@
 
 <c:import url="/WEB-INF/jsp/common/header.jsp" />
 
-<section id ="main-content">
-<h2>New Geek Post</h2>
+<section id="main-content">
+	<h2>New Geek Post</h2>
 
 	<c:url var="formAction" value="/forumPost" />
 	<form method="POST" action="${formAction}">
 		<div>
-			<label for="username">Username:</label> 
-			<input type="text" name="username" />
+			<label for="username">Username:</label>
+			<input type="text" name="username" required/>
 		</div>
 		<div>
-			<label for="subject">Subject:</label> 
-			<input type="text" name="subject" />
-		</div>		
-		<div>
-			<label for="message">Message:</label> 
-			<input type="text" name="message" />
+			<label for="subject">Subject:</label>
+			<input type="text" name="subject" required/>
 		</div>
-		<input type="submit"
-			value="Submit" />
+		<div>
+			<label for="message">Message:</label>
+			<input type="text" name="message" required/>
+		</div>
+		<input type="submit" value="Submit" />
 	</form>
-
 </section>
 
-<c:import url="/WEB-INF/jsp/common/footer.jsp"/>
+<c:import url="/WEB-INF/jsp/common/footer.jsp" />
