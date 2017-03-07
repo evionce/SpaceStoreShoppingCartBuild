@@ -43,5 +43,7 @@
 			<li><a href="${Weight}">Alien Weight</a></li>
 			<c:url value="/alienDriveTime" var="DriveTime" />
 			<li><a href="${DriveTime}">Drive Time</a></li>
+			<c:url value="/forum" var="Forum" />
+			<li><a href="${Forum}">Forum</a></li>
 		</ul>
 	</nav>
