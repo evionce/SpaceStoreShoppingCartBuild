@@ -45,5 +45,7 @@
 			<li><a href="${DriveTime}">Drive Time</a></li>
 			<c:url value="/forum" var="Forum" />
 			<li><a href="${Forum}">Forum</a></li>
+			<c:url value="/store" var="Store" />
+			<li><a href="${Store}">Store</a></li>
 		</ul>
 	</nav>

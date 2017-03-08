@@ -45,6 +45,10 @@ public class DollarAmount {
     public DollarAmount plus(DollarAmount amountToAdd) {
         return new DollarAmount(this.totalAmountInCents + amountToAdd.totalAmountInCents);
     }
+    public DollarAmount multiply(int amountToMultiply) {
+        return new DollarAmount(this.totalAmountInCents * amountToMultiply);
+    }
+    
 
     public int compareTo(DollarAmount amountToCompare) {
         if(this.isGreaterThan(amountToCompare)) {
